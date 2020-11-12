@@ -1,0 +1,52 @@
+@import "config";
+@import "button";
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.background-patterns {
+  position: absolute;
+}
+main,
+.attribution {
+  position: relative;
+}
+::-webkit-slider-runnable-track {
+  width: 90%;
+  max-width: 1200px;
+  max-height: 550px;
+}
+.text-container {
+  position: absolute;
+  width: 45%;
+  left: 15%;
+  top: 30%;
+  z-index: 2;
+  p {
+    color: $dark-blue;
+    font-weight: 300;
+    font-size: 2rem;
+  }
+  .name {
+    color: $dark-blue;
+    font-weight: 700;
+    padding-right: 0.5em;
+  }
+  .job {
+    color: $grayish-blue;
+  }
+}
+.picture {
+  position: absolute;
+  width: 35%;
+  right: 15%;
+  bottom: 20%;
+}
+
+.hidden {
+  display: none;
+}

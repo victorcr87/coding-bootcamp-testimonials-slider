@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: url("../images/pattern-bg.svg") 90% 30% no-repeat, url("../images/pattern-curve.svg") 0% 100% no-repeat, url("../images/pattern-quotes.svg") 25% 30% no-repeat;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+  place-items: center;
+}
+
+.btn-wrapper {
+  position: absolute;
+  bottom: 17.5%;
+  right: 40%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 10px 20px 10px #babacf;
+          box-shadow: 0px 10px 20px 10px #babacf;
+}
+
+.btn-wrapper .btn {
+  position: relative;
+  line-height: 2em;
+  margin: 0;
+  padding: 1em 1em 0.7em 1em;
+  background: white;
+}
+
+.btn-wrapper .btn__prev {
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+
+.btn-wrapper .btn__next {
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.background-patterns {
+  position: absolute;
+}
+
+main,
+.attribution {
+  position: relative;
+}
+
+::-webkit-slider-runnable-track {
+  width: 90%;
+  max-width: 1200px;
+  max-height: 550px;
+}
+
+.text-container {
+  position: absolute;
+  width: 45%;
+  left: 15%;
+  top: 30%;
+  z-index: 2;
+}
+
+.text-container p {
+  color: #202046;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.text-container .name {
+  color: #202046;
+  font-weight: 700;
+  padding-right: 0.5em;
+}
+
+.text-container .job {
+  color: #babacf;
+}
+
+.picture {
+  position: absolute;
+  width: 35%;
+  right: 15%;
+  bottom: 20%;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

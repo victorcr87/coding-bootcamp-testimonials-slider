@@ -1,0 +1,21 @@
+$dark-blue: hsl(240, 38%, 20%);
+$grayish-blue: hsl(240, 18%, 77%);
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: url("../images/pattern-bg.svg") 90% 30% no-repeat,
+    url("../images/pattern-curve.svg") 0% 100% no-repeat,
+    url("../images/pattern-quotes.svg") 25% 30% no-repeat;
+}
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+}

@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: url("../images/pattern-bg.svg") 90% 30% no-repeat, url("../images/pattern-curve.svg") 0% 100% no-repeat, url("../images/pattern-quotes.svg") 25% 30% no-repeat;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+  place-items: center;
+}
+
 * {
   font-family: "Inter", sans-serif;
 }
@@ -34,6 +55,7 @@ body {
   margin: 0;
   padding: 1em 1em 0.7em 1em;
   background: white;
+  cursor: pointer;
 }
 
 .btn-wrapper .btn__prev {
@@ -70,6 +92,14 @@ main,
   max-height: 550px;
 }
 
+.slider {
+  display: none;
+}
+
+.slider.active {
+  display: block;
+}
+
 .text-container {
   position: absolute;
   width: 45%;
@@ -99,9 +129,5 @@ main,
   width: 35%;
   right: 15%;
   bottom: 20%;
-}
-
-.hidden {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -20,6 +20,12 @@ main,
   max-width: 1200px;
   max-height: 550px;
 }
+.slider {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
 .text-container {
   position: absolute;
   width: 45%;
@@ -45,8 +51,4 @@ main,
   width: 35%;
   right: 15%;
   bottom: 20%;
-}
-
-.hidden {
-  display: none;
 }

@@ -22,4 +22,11 @@
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
   }
+  @include mobile {
+    position: absolute;
+    top: 42%;
+    left: 40%;
+    right: auto;
+    bottom: auto;
+  }
 }

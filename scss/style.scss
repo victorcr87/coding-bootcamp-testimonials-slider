@@ -45,10 +45,25 @@ main,
   .job {
     color: $grayish-blue;
   }
+  @include mobile {
+    top: 48%;
+    width: 80%;
+    left: 10%;
+    margin: 0 auto;
+    text-align: center;
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }
 .picture {
   position: absolute;
   width: 35%;
   right: 15%;
   bottom: 20%;
+  @include mobile {
+    width: 70%;
+    position: absolute;
+    top: 8%;
+  }
 }

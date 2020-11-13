@@ -1,6 +1,11 @@
 $dark-blue: hsl(240, 38%, 20%);
 $grayish-blue: hsl(240, 18%, 77%);
-
+$mobile-switch: 1000px;
+@mixin mobile {
+  @media (max-width: $mobile-switch) {
+    @content;
+  }
+}
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
 * {
   font-family: "Inter", sans-serif;
@@ -10,12 +15,17 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+}
+body {
   background: url("../images/pattern-bg.svg") 90% 30% no-repeat,
     url("../images/pattern-curve.svg") 0% 100% no-repeat,
     url("../images/pattern-quotes.svg") 25% 30% no-repeat;
-}
-body {
   display: grid;
   grid-template-rows: 1fr auto;
   place-items: center;
+  @include mobile {
+    background: url("../images/pattern-bg.svg") 50% 5%/95% no-repeat,
+      url("../images/pattern-curve.svg") 0% 100% no-repeat,
+      url("../images/pattern-quotes.svg") 50% 55%/20% no-repeat;
+  }
 }
